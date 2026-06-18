@@ -1,0 +1,14 @@
+{
+  "name": "ai-trading-terminal-v28-institutional",
+  "version": "28.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "@vercel/node": "latest"
+  },
+  "devDependencies": {}
+}
