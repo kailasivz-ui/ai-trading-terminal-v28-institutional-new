@@ -1,5 +1,2 @@
-import { optionsPlan } from './_engine.js';
-export default function handler(req,res){
- const index=(req.query.index||'NIFTY').toUpperCase();
- res.status(200).json(optionsPlan(index));
-}
+const data = require('./_data');
+module.exports = (req,res)=>{res.setHeader('Access-Control-Allow-Origin','*');res.status(200).json(data.options((req.query&&req.query.symbol)||'NIFTY'));};
